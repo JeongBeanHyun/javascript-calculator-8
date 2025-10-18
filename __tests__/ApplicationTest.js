@@ -16,7 +16,7 @@ const getLogSpy = () => {
   return logSpy;
 };
 
-describe("문자열 계산기", () => {
+describe("문자열 계산기 실행", () => {
   test("커스텀 구분자 사용", async () => {
     const inputs = ["//;\\n1"];
     mockQuestions(inputs);
