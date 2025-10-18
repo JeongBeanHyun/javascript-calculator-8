@@ -41,3 +41,12 @@ export function getDelimitersAndNumbersPart(input) {
 
   return { delimiters, numbersPart };
 }
+
+export function tokenize(numbersPart, delimiters) {
+  return numbersPart.split(delimiters);
+}
+
+export function toNumbers(tokens) {
+  const numbers = tokens.map((n) => Number(n));
+  return numbers;
+}
